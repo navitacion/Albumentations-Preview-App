@@ -1,0 +1,146 @@
+# <Albumentation Class Name>:  ex. Blur, HorizontalFlip
+#   url: <Albumentations Document Link>
+#   values:
+#     <Albumentations Arguments> (ex.blur_limit, height):
+#       st_type: <Streamlit Method> (ex. slider, radio)
+#       <Streamlit Arguments> (ex. min_value, max_value): Values
+
+
+HorizontalFlip:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.HorizontalFlip
+  values: null
+
+VerticalFlip:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.VerticalFlip
+  values: null
+
+ChannelShuffle:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.ChannelShuffle
+  values: null
+
+Resize:
+  url: null
+  values:
+    height:
+      st_type: slider
+      min_value: 128
+      max_value: 512
+      value: 256
+      step: 8
+
+    width:
+      st_type: slider
+      min_value: 128
+      max_value: 512
+      value: 256
+      step: 8
+
+
+Blur:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.Blur
+  values:
+    blur_limit:
+      st_type: slider
+      min_value: 3
+      max_value: 19
+      value: 3
+      step: 2
+
+
+CLAHE:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.CLAHE
+  values:
+    clip_limit:
+      st_type: slider
+      min_value: 2
+      max_value: 16
+      value: 4
+      step: 1
+
+
+CoarseDropout:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.CoarseDropout
+  values:
+    max_holes:
+      st_type: slider
+      min_value: 2
+      max_value: 64
+      value: 8
+      step: 1
+
+    max_height:
+      st_type: slider
+      min_value: 2
+      max_value: 64
+      value: 8
+      step: 1
+
+    max_width:
+      st_type: slider
+      min_value: 2
+      max_value: 64
+      value: 8
+      step: 1
+
+ColorJitter:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.ColorJitter
+  values:
+    brightness:
+      st_type: slider
+      min_value: 0.1
+      max_value: 1.0
+      value: 0.2
+      step: 0.1
+
+    contrast:
+      st_type: slider
+      min_value: 0.1
+      max_value: 1.0
+      value: 0.2
+      step: 0.1
+
+    saturation:
+      st_type: slider
+      min_value: 0.1
+      max_value: 1.0
+      value: 0.2
+      step: 0.1
+
+    hue:
+      st_type: slider
+      min_value: 0.1
+      max_value: 1.0
+      value: 0.2
+      step: 0.1
+
+Downscale:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.Downscale
+  values:
+    scale_min:
+      st_type: slider
+      min_value: 0.1
+      max_value: 1.0
+      value: 0.25
+      step: 0.05
+
+    scale_max:
+      st_type: slider
+      min_value: 0.1
+      max_value: 1.0
+      value: 0.25
+      step: 0.05
+
+Equalize:
+  url: https://albumentations.ai/docs/api_reference/augmentations/transforms/#albumentations.augmentations.transforms.Equalize
+  values:
+    mode:
+      st_type: radio
+      options:
+        - cv
+        - pil
+
+    by_channels:
+      st_type: radio
+      options:
+        - true
+        - false
