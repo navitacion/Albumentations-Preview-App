@@ -21,19 +21,16 @@ Then, Access the following URL
 http://localhost:8501/
 ```
 
-### Citing
+### Pre-Set Images
 
-```commandline
-@Article{info11020125,
-    AUTHOR = {Buslaev, Alexander and Iglovikov, Vladimir I. and Khvedchenya, Eugene and Parinov, Alex and Druzhinin, Mikhail and Kalinin, Alexandr A.},
-    TITLE = {Albumentations: Fast and Flexible Image Augmentations},
-    JOURNAL = {Information},
-    VOLUME = {11},
-    YEAR = {2020},
-    NUMBER = {2},
-    ARTICLE-NUMBER = {125},
-    URL = {https://www.mdpi.com/2078-2489/11/2/125},
-    ISSN = {2078-2489},
-    DOI = {10.3390/info11020125}
-}
-```
+- mt-fuji.jpg
+    - Citing from [pixabay](https://pixabay.com/images/id-477832/)
+
+    
+- mona-lisa.jpg
+    - Citing from [pixabay](https://pixabay.com/photos/art-painting-mona-lisa-classic-74050/)
+  
+
+- manhattan.jpg
+    - Citing from [pixabay](https://pixabay.com/photos/architecture-new-york-city-manhattan-1853552/)
+  
