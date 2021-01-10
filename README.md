@@ -4,8 +4,22 @@
 
 This app is Demo of Image Augmentation Library "Albumentations"
 
+![Streamlit](https://user-images.githubusercontent.com/42016148/104122887-0850ba80-538b-11eb-9240-48c055877f75.gif)
 
-## Set up (Local)
+## Library
+
+- Albumentations 0.5.2
+
+- Streamlit 0.74.1
+
+
+## Get Started
+
+This app is already deployed by Streamlit Shareing.
+
+Click [Here](https://share.streamlit.io/navitacion/albumentations-preview-app/app.py) and try it!
+
+### Work by Local
 
 Execute the following command
 
