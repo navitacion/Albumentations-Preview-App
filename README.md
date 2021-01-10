@@ -4,7 +4,7 @@
 
 This app is Demo of Image Augmentation Library "Albumentations"
 
-![Streamlit](https://user-images.githubusercontent.com/42016148/104122887-0850ba80-538b-11eb-9240-48c055877f75.gif)
+![Streamlit](https://user-images.githubusercontent.com/42016148/104123128-9d07e800-538c-11eb-8bad-a64ba278fef2.gif)
 
 ## Library
 
