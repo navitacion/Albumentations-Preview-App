@@ -10,7 +10,6 @@ import torch
 from torchvision.utils import make_grid
 
 
-@st.cache()
 def load_image(image_name):
     # User Selected Image
     if image_name == 'Upload':
