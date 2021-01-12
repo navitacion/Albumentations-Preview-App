@@ -1,4 +1,5 @@
 import os
+import gc
 import cv2
 import glob
 import numpy as np
@@ -9,6 +10,7 @@ import torch
 from torchvision.utils import make_grid
 
 
+@st.cache()
 def load_image(image_name):
     # User Selected Image
     if image_name == 'Upload':
@@ -25,6 +27,7 @@ def load_image(image_name):
     return img
 
 
+@st.cache()
 def get_transform(cfg):
     transforms = []
 
@@ -86,3 +89,6 @@ def display_images(img, transforms):
         transformed_img = np.transpose(res.numpy(), [1,2,0])
         # Display
         st.image(transformed_img, use_column_width=True)
+
+        del transformed_img, img, res
+        gc.collect()
