@@ -27,7 +27,6 @@ def load_image(image_name):
     return img
 
 
-@st.cache()
 def get_transform(cfg):
     transforms = []
 
